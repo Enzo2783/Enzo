@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRT Motorsport — Équipe de course Ligier JS2 R2</title>
+<meta name="description" content="CRT Motorsport, écurie de course en Ligier JS2 R2. Découvrez notre équipe, notre voiture et contactez-nous.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<header class="site-header">
+  <div class="logo">CRT<span>MOTORSPORT</span></div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="hero-content">
+    <p class="hero-tag">ÉCURIE DE COURSE</p>
+    <h1>CRT <span>MOTORSPORT</span></h1>
+    <p class="hero-sub">Performance. Précision. Passion.<br>Notre Ligier JS2 R2 sur les circuits.</p>
+    <div class="hero-actions">
+      <a href="#equipe" class="btn btn-primary">Découvrir l'équipe</a>
+      <a href="#contact" class="btn btn-outline">Nous contacter</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+<section id="equipe" class="team">
+  <div class="section-head">
+    <p class="section-tag">L'ÉQUIPE</p>
+    <h2>Une équipe, une passion</h2>
+    <p class="section-desc">CRT Motorsport rassemble pilotes, mécaniciens et passionnés autour d'un même objectif : faire vivre la Ligier JS2 R2 sur les plus belles pistes.</p>
+  </div>
+
+  <div class="team-grid">
+    <article class="team-card">
+      <div class="team-photo placeholder-photo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Pilote Titulaire</h3>
+      <p class="team-role">Pilote — Volant principal</p>
+      <p class="team-bio">À ajouter : présentation du pilote, palmarès et expérience en compétition.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="team-photo placeholder-photo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Chef Mécanicien</h3>
+      <p class="team-role">Préparation & réglages</p>
+      <p class="team-bio">À ajouter : présentation du chef mécanicien et de son expertise technique.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="team-photo placeholder-photo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Manager d'équipe</h3>
+      <p class="team-role">Organisation & partenariats</p>
+      <p class="team-bio">À ajouter : présentation du manager et de son rôle au sein de l'écurie.</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-head">
+    <p class="section-tag">CONTACT</p>
+    <h2>Travaillons ensemble</h2>
+    <p class="section-desc">Une question, un partenariat, une opportunité ? Contactez CRT Motorsport.</p>
+  </div>
+
+  <div class="contact-wrap">
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>CRT Motorsport</h3>
+      <p>Ligier JS2 R2</p>
+      <ul>
+        <li><strong>Email :</strong> contact@crt-motorsport.com</li>
+        <li><strong>Téléphone :</strong> +33 0 00 00 00 00</li>
+        <li><strong>Localisation :</strong> France</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> CRT Motorsport — Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
